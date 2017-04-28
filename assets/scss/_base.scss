@@ -15,7 +15,7 @@ body {
 
 * {
 	box-sizing: border-box;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 
 	&:focus {
 		outline: none;
@@ -52,9 +52,11 @@ h1 {
 }
 
 h2 {
-	font-size: 9rem;
-	font-weight: 700;
+	font-size: 3.4rem;
+	font-weight: 600;
 	text-align: center;
+    color:  #212121;
+	margin-bottom: 1rem;
 }
 
 h3 {
@@ -85,13 +87,10 @@ em {
 }
 
 section {
-    padding: 10rem 0;
-	height: auto;
-	overflow: auto;
+	padding: 12rem 0;
 }
 
 button {
-	min-width: 165px;
 	padding: 1rem 3rem;
 	border: none; 
 	cursor: pointer;
@@ -99,17 +98,38 @@ button {
 }
 
 p {
-	font-size: 17px;
-	margin-bottom: 1.5rem;
+	font-size: 1.6rem;
 	line-height: 1.6;
 	font-weight: 300;
 	text-align: center;
+    color:  #727272;
 }
 
 a {
     text-align: left;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.divide-line,
+.divide-line_different {
+    position: relative;
+    padding-bottom: 2rem;
+
+    &:after {
+        content: "";
+        position: absolute;
+        height: 0.3rem;
+        width: 5rem;
+        bottom: 0;
+        left: 50%;
+        margin-left: -2.5rem;
+        background-color:  #03a9f4;
+    }
+}
+
+.divide-line_different:after {
+	background-color: #fff;
 }
 
 @media only screen and (max-width: 800px) {
